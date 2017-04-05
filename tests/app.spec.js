@@ -7,7 +7,7 @@ describe('find maximum of array', function ()
     {
         it('should return correct value', function ()
         {
-            expect(app.findMax([1, 2, 3, 4, -5 ])).to.eql(-5);
+            expect(app.findMax([1, 2, 3, 4, -5 ])).to.eql(4);
         });
     });
     describe('when parameters are incorrect', function ()
