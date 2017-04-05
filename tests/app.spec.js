@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 var app = require('../app/app');
 
-describe('find maximum of array', function ()
+describe('find minimum of array', function ()
 {
     describe('when array is not empty and data are correct', function ()
     {
