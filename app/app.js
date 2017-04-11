@@ -1,19 +1,21 @@
-function findMax(array) {
+function isPrime(value)
+{
+    for (var i = 2; i < value; i++) {
+        if (value % i === 0) {
+            return false;
+        }
+    }
+    return value > 1;
+}
 
-    if (!isNaN(array[0]))
-        max = array[0]
-    else
-        return false
-
-    for(i = 1; i < array.length; i++)
-        if (!isNaN(array[i])) {
-            if (max < array[i])
-                max = array[i]
-        } else
-            return false
-
-    return max
+function areaOfTrapezoid(a, b, h)
+{
+    if (a < 0 || b < 0 || h < 0 || typeof a !== 'number' || typeof b !== 'number' || typeof h !== 'number') {
+        return false;
+    }
+    return 0.5 * h * (a + b);
 }
 module.exports = {
-    findMax: findMax
+    isPrime: isPrime,
+    areaOfTrapezoid: areaOfTrapezoid
 };
