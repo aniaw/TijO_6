@@ -6,7 +6,14 @@ function findMax(array)
             return false;
         }
     }
-    return true;
+
+    var max = array[0];
+    for(var i = 0; i < arrayLength; i++) {
+        if (array[i] > max) {
+            max = array[i];
+        }
+    }
+    return max;
 }
 module.exports = {
     findMax: findMax
