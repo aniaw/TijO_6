@@ -9,7 +9,7 @@ describe('findMax', function ()
     {
         it('all elements are numbers', function()
         {
-            expect(app.findMax([1,2,3,4])).to.eql(true);
+            expect(app.findMax([1,2,3,4])).to.eql(4);
         });
         it('not all elements are numbers', function()
         {
