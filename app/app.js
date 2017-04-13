@@ -6,7 +6,14 @@ function findMin(array)
             return false;
         }
     }
-    return true;
+
+    var min = array[0];
+    for(var i = 0; i < arrayLength; i++) {
+        if (array[i] < min) {
+            min = array[i];
+        }
+    }
+    return min;
 }
 module.exports = {
     findMin: findMin

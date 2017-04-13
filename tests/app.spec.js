@@ -9,7 +9,7 @@ describe('findMin', function ()
     {
         it('all elements are numbers', function()
         {
-            expect(app.findMin([1,2,3,4])).to.eql(true);
+            expect(app.findMin([1,2,3,4])).to.eql(1);
         });
         it('not all elements are numbers', function()
         {
