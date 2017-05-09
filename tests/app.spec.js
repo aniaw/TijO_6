@@ -1,16 +1,20 @@
 'use strict';
 
 var expect = require('chai').expect;
-var app = require('../app/app');
+var app = require ('../app/app');
 
-    describe('findMin', function ()
+describe('Minimum', function ()
+{
+    describe('find min', function ()
     {
-        it('should return false', function(){
-                expect(app.findMin([1,'a',3,4])).to.eql(false);
-            });
-
-        it('should return correct', function ()
+        it('all elements numbers', function()
         {
             expect(app.findMin([1,2,3,4])).to.eql(1);
         });
-    });
+        it('one element or more is not number', function()
+        {
+            expect(app.findMin([1,2,3,"babuszka"])).to.eql(false);
+        });
+    })
+
+});
