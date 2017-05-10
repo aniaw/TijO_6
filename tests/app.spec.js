@@ -13,6 +13,6 @@ describe('findMijn()', function ()
     });
     it('is NaN', function ()
     {
-        expect(app.findMin([3,4,"",-4])).to.eql(false);
+        expect(app.findMin([3,4,"",-4])).to.eql(NaN);
     });
 });
